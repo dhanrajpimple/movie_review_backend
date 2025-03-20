@@ -6,7 +6,7 @@ exports.createMovie = async (req, res, next) => {
     if (!title || !description || !release_date  || !url) {
       return res.status(400).json({ message: 'Missing required fields' });
     }
-    const query = 'INSERT INTO movies (title, description, release_date) VALUES ($1, $2, $3, $4) RETURNING *';
+    const query = 'INSERT INTO movies (title, description, release_date , url) VALUES ($1, $2, $3, $4) RETURNING *';
     const result = await pool.query(query, [title, description, release_date, url]);
     res.status(201).json(result.rows[0]);
   } catch (err) {
