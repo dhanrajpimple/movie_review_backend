@@ -1,0 +1,69 @@
+backend/
+├── config/
+│   ├── db.js
+│   ├── jwt.js
+├── controllers/
+│   ├── authController.js
+│   ├── movieController.js
+│   └── reviewController.js
+│   └── adminController.js
+├── middlewares/
+│   ├── admin.js
+│   ├── auth.js
+│   └── errorHandler.js
+├── routes/
+│   ├── authRoutes.js
+│   ├── movieRoutes.js
+│   └── reviewRoutes.js
+├── .env
+|── index.js
+|── schema.sql
+├── package.json
+├── README.md
+
+
+Tech Stack
+Backend:
+
+Node.js :- Backend runtime
+Express.js :- Web framework
+PostgreSQL :- Database
+Neon :- Cloud-hosted PostgreSQL
+JWT :_ Authentication
+Bcrypt :- Password hashing
+Cors :_ Cross-origin request handling
+
+
+
+
+🚀 Installation & Setup
+
+1. Clone the repository:
+git clone https://github.com/dhanrajpimple/movie_review_backend.git
+
+
+2. Navigate to the backend directory:
+cd backend
+
+
+3. Install dependencies
+npm install
+
+
+4. Set up the database:
+add Neon cli in .env file
+
+5. Configure environment variables:
+Create a .env file in the backend directory and add:
+
+PORT=5000
+JWT_SECRET=your-jwt-secret
+DB_URL=postgres://username:password@host:port/database
+
+
+
+6. Start the development server:
+npm start 
+
+
+7. backend hosted on render 
